@@ -28,33 +28,33 @@ export default function Navbar() {
           : "bg-white dark:bg-black"
       }`}
     >
-      <div className="flex h-16 w-full items-center">
+      <div className="flex h-16 w-full items-center overflow-x-auto whitespace-nowrap scrollbar-hide">
         {/* Shop Link */}
-        <div className="flex h-full items-center justify-center border-r border-gray-300 dark:border-white/20 px-8">
+        <div className="flex h-full items-center justify-center border-r border-gray-300 dark:border-white/20 px-4 md:px-8 shrink-0">
           <Link href="/shop" className="text-sm font-medium hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
             Shop
           </Link>
         </div>
 
         {/* Contact Link */}
-        <div className="flex h-full items-center justify-center border-r border-gray-300 dark:border-white/20 px-8">
+        <div className="flex h-full items-center justify-center border-r border-gray-300 dark:border-white/20 px-4 md:px-8 shrink-0">
           <Link href="/contact" className="text-sm font-medium hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
             Contact
           </Link>
         </div>
 
         {/* Home Link */}
-        <div className="flex h-full items-center justify-center border-r border-gray-300 dark:border-white/20 px-8">
+        <div className="flex h-full items-center justify-center border-r border-gray-300 dark:border-white/20 px-4 md:px-8 shrink-0">
           <Link href="/" className="text-sm font-medium hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
             Home
           </Link>
         </div>
 
         {/* Middle Empty Space */}
-        <div className="flex-1 h-full border-r border-gray-300 dark:border-white/20"></div>
+        <div className="flex-1 h-full min-w-[2rem] border-r border-gray-300 dark:border-white/20"></div>
 
         {/* Theme Toggle & Cart Link */}
-        <div className="flex h-full items-center justify-center gap-4 px-8">
+        <div className="flex h-full items-center justify-center gap-3 md:gap-4 px-4 md:px-8 shrink-0">
           <ThemeToggle />
           <Link href="/cart" className="text-sm font-medium hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
             Cart

@@ -4,9 +4,9 @@ export default function Home() {
   return (
     <div className="flex flex-col lg:flex-row w-full min-h-[calc(100vh-80px)]">
       {/* Left Column - Hero Content */}
-      <div className="flex flex-col w-full lg:w-1/2 px-8 py-16 lg:pr-16">
+      <div className="flex flex-col w-full lg:w-1/2 px-4 sm:px-8 py-10 sm:py-16 lg:pr-16">
         {/* Hero Title */}
-        <h1 className="text-6xl sm:text-7xl lg:text-[100px] leading-tight font-medium tracking-tight mb-6">
+        <h1 className="text-4xl sm:text-6xl lg:text-[100px] leading-tight font-medium tracking-tight mb-6 break-words">
           Kyiv <br />
           LuxeBouquets
         </h1>
@@ -44,7 +44,7 @@ export default function Home() {
       </div>
 
       {/* Right Column - Shop Cards */}
-      <div className="flex flex-col w-full lg:w-1/2 border-l border-black dark:border-white/20">
+      <div className="flex flex-col w-full lg:w-1/2 lg:border-l border-t lg:border-t-0 border-black dark:border-white/20">
         {/* Fresh Flowers Row */}
         <div className="flex flex-col sm:flex-row w-full flex-1 min-h-[350px] border-b border-black dark:border-white/20">
           {/* Left Half (Text) */}

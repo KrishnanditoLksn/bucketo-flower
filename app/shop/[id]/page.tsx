@@ -4,7 +4,7 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import FlowerDetail from "@/components/FlowerDetail";
 
-// Mock data (in a real app this would be fetched from API/Database)
+
 const flowers = [
   { id: "1", name: "Snowfall", price: 70, image: "/buket.png", description: "Bunga putih bersih bagaikan salju, cocok untuk momen suci dan elegan." },
   { id: "2", name: "Dawn's Delight", price: 85, image: "/buket.png", description: "Warna-warni cerah yang mengingatkan pada keindahan fajar." },

@@ -19,6 +19,7 @@ export const metadata: Metadata = {
 
 import Navbar from "@/components/layout/Navbar";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import Footer from "@/components/layout/Footer";
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
@@ -33,6 +34,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <main className="flex-1 flex flex-col">
             {children}
           </main>
+          <div className="mt-16">
+            <Footer/>
+          </div>
         </ThemeProvider>
       </body>
     </html>
